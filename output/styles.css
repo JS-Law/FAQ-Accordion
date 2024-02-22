@@ -21,8 +21,7 @@ html {
   align-items: center;
   justify-content: center;
 }
-
-.content {
+.main .content {
   display: flex;
   flex-direction: column;
   font-family: "WorkSans-VariableFont_wght";
@@ -30,31 +29,29 @@ html {
   height: 527px;
 }
 
-button.btn {
-  border: none; /* Remove default border */
-  background: none; /* Remove default background */
-  padding: 0; /* Remove default padding */
-  cursor: pointer; /* Change cursor on hover */
+button.btn, img.btn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+button.btn when img, img.btn when img {
+  display: block;
+  width: 2rem;
+  height: auto;
 }
 
-img.btn {
-  display: block; /* Remove any space below the image */
-  width: 2rem; /* Specify the width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.section#titleContainer {
+#titleContainer {
   display: flex;
   flex-direction: row;
 }
 
-.questionTitle {
+.section .questionTitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-p.textContent {
+.section p.textContent {
   display: none;
 }
 
