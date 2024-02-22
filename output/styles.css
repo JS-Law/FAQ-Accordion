@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "WorkSans-Italic-VariableFont_wght";
+  src: url(/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "WorkSans-VariableFont_wght";
+  src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  font-family: "WorkSans-VariableFont_wght";
+  width: 327px;
+  height: 527px;
+}
+
+button.btn {
+  border: none; /* Remove default border */
+  background: none; /* Remove default background */
+  padding: 0; /* Remove default padding */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+img.btn {
+  display: block; /* Remove any space below the image */
+  width: 2rem; /* Specify the width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.section#titleContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.questionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.textContent {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
