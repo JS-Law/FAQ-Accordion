@@ -15,8 +15,6 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
   flex-direction: column;
   background-color: #F8EEFF;
   margin: 0;
@@ -100,18 +98,9 @@ button.btn when img, img.btn when img {
   margin-block-start: 0;
   font-size: 14px;
   font-weight: 400;
-}
-.section #answerOne {
-  display: none;
-}
-.section #answerTwo {
-  display: none;
-}
-.section #answerThree {
-  display: none;
-}
-.section #answerFour {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */

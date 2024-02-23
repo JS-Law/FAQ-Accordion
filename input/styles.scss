@@ -27,8 +27,8 @@ html{
     // width: 375px;
 }
 body{
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     flex-direction: column;
     background-color: $light-pink;
     margin: 0;
@@ -100,6 +100,8 @@ button.btn, img.btn {
 
 // Section Styles
 .section {
+    // overflow: hidden; // Ensures that overflow content is not visible unless expanded
+    // transition: max-height 0.6s ease-out; // Smooth transition for the expand/collapse effect
 
     .questionTitle {
         display: flex;
@@ -122,20 +124,23 @@ button.btn, img.btn {
         margin-block-start: 0;
         font-size: 14px;
         font-weight: 400;
+        max-height: 0;
+        overflow: hidden;    
+        transition: max-height 0.1s ease-in-out; // Smooth transition for the expand/collapse effect
     }
     #answerOne{
-        display: none;
+        // display: none;
     }
     #answerTwo{
-        display: none;
+        // display: none;
         
     }
     #answerThree{
-        display: none;
+        // display: none;
         
     }
     #answerFour{
-        display: none;
+        // display: none;
 
     }
 }
