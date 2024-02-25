@@ -31,10 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  justify-content: center;
   width: 100%;
-  margin-top: -75px;
 }
 .main .content {
   background-color: #FFFFFF;
@@ -45,6 +42,7 @@ body {
   font-family: "WorkSans-VariableFont_wght";
   width: 327px;
   border-radius: 0.7rem;
+  margin-top: 150px;
 }
 
 .border {
@@ -92,6 +90,9 @@ button.btn when img, img.btn when img {
 .section a {
   text-decoration: none;
   color: #301534;
+}
+.section a:hover {
+  color: #AD28EB;
 }
 .section p.textContent {
   color: #8B6990;
