@@ -24,6 +24,8 @@ body {
   width: 100%;
   z-index: -1;
   position: absolute;
+  object-fit: cover;
+  height: 240px;
 }
 
 .main {
@@ -103,6 +105,7 @@ button.btn when img, img.btn when img {
   overflow: hidden;
   transition: max-height 0.1s ease-in-out;
 }
+
 @media (min-width: 600px) {
   .content {
     width: 600px !important;
@@ -142,6 +145,17 @@ button.btn when img, img.btn when img {
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
+  }
+  .bgImageContainer #bgImage {
+    display: none;
+  }
+  .bgImageContainer #bgImageDesktop {
+    width: 100%;
+    object-fit: cover;
+    height: 320px;
+    z-index: -1;
+    position: absolute;
+    display: block;
   }
 }
 

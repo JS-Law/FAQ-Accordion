@@ -25,24 +25,19 @@ box-sizing: border-box;
 }
 html{
     margin: 0;
-    // width: 375px;
 }
 body{
-    // display: flex;
-    // justify-content: center;
     flex-direction: column;
     background-color: $light-pink;
     margin: 0;
 }
 .bgImageContainer{
-    #bgImage{
-        // width: 375px;
-
-    }
     img{
         width: 100%;
         z-index: -1;
         position: absolute;
+        object-fit: cover;
+        height: 240px;
     }
 }
 
@@ -52,11 +47,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    // align-content: center;
-    // justify-content: center;
     width: 100%;
-    // margin-top: -75px;
-    
     .content {
         background-color: $white;
         padding: 24px;
@@ -75,17 +66,16 @@ body{
 }
 // Button Styles
 button.btn, img.btn {
-    border: none; // Remove default border for buttons
-    background: none; // Remove default background for buttons
-    padding: 0; // Remove default padding
+    border: none; 
+    background: none;
+    padding: 0; 
         .contractBtn{
             display: none;
         }
-// Specific style for img.btn
     & when img {
-        display: block; // Remove any space below the image
-        width: 2rem; // Specify the width
-        height: auto; // Maintain aspect ratio
+        display: block; 
+        width: 2rem; 
+        height: auto;
     }
 }
 
@@ -130,21 +120,6 @@ button.btn, img.btn {
         overflow: hidden;    
         transition: max-height 0.1s ease-in-out; 
     }
-    #answerOne{
-        // display: none;
-    }
-    #answerTwo{
-        // display: none;
-        
-    }
-    #answerThree{
-        // display: none;
-        
-    }
-    #answerFour{
-        // display: none;
-
-    }
 }
 
 @media (min-width: 600px) {
@@ -187,6 +162,20 @@ button.btn, img.btn {
             font-size: 16px;
             font-weight: 400;
             line-height: 25px;    
+        }
+    }
+    .bgImageContainer{
+        #bgImage{
+            display: none;
+    
+        }
+        #bgImageDesktop{
+            width: 100%;
+            object-fit: cover;
+            height: 320px;
+            z-index: -1;
+            position: absolute;
+            display: block;
         }
     }
 }
