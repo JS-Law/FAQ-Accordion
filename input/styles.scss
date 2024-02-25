@@ -1,11 +1,12 @@
 // ASSETS
 @font-face {
     font-family: 'WorkSans-Italic-VariableFont_wght';
-    src: url(/assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
-  }
+    src: url(../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
 @font-face {
 font-family: 'WorkSans-VariableFont_wght';
-src: url(/assets/fonts/WorkSans-VariableFont_wght.ttf);
+src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
 }
 
 // Variables
@@ -146,3 +147,46 @@ button.btn, img.btn {
     }
 }
 
+@media (min-width: 600px) {
+    .content{
+        width: 600px !important;
+        padding: 30px !important;
+    }
+    #titleContainer {
+        display: flex; 
+        flex-direction: row;
+        gap: 20px;
+        color: $dark-purple;
+        margin-block: -20px;
+        margin-block-start: -30px;
+        font-size: 30px;
+        .faqStar{
+            width: 30px;
+        }
+    }
+    .section {
+        .questionTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #questionTitleOne{
+            padding-right: 30px;
+        }
+        .question{
+            font-size: 18px;
+            font-weight: 600;
+        }
+        a{
+            text-decoration: none;
+            color: $dark-purple;
+        }
+        p.textContent{
+            color: $pale-purple;
+            margin-block-start: 0;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;    
+        }
+    }
+}
