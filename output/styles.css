@@ -43,7 +43,7 @@ body {
   font-family: "WorkSans-VariableFont_wght";
   width: 327px;
   border-radius: 0.7rem;
-  margin-top: 150px;
+  margin-top: 160px;
 }
 
 .border {
@@ -114,6 +114,7 @@ button.btn when img, img.btn when img {
   .content {
     width: 600px !important;
     padding: 30px !important;
+    border-radius: 16px !important;
   }
   #titleContainer {
     display: flex;
@@ -124,8 +125,8 @@ button.btn when img, img.btn when img {
     margin-block-start: -30px;
     font-size: 30px;
   }
-  #titleContainer .faqStar {
-    width: 30px;
+  #titleContainer img.faqStar {
+    width: 35px !important;
   }
   .section .questionTitle {
     display: flex;

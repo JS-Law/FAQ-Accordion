@@ -77,6 +77,8 @@ const answerFour = document.getElementById('answerFour');
 
 // QUESTION ONE
 // EXPAND
+onload = () => expandOne.click();
+
 expandOne.addEventListener('click', () => {
     closeAllExcept('answerOne')
     if (answerOne.style.maxHeight && answerOne.style.maxHeight !== '0px') {
