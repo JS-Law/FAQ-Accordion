@@ -39,7 +39,6 @@ body {
   background-color: #FFFFFF;
   padding: 24px;
   display: flex;
-  align-content: center;
   flex-direction: column;
   font-family: "WorkSans-VariableFont_wght";
   width: 327px;
@@ -104,6 +103,11 @@ button.btn when img, img.btn when img {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.1s ease-in-out;
+}
+
+.attribution {
+  font-family: "WorkSans-VariableFont_wght";
+  margin-bottom: 10px;
 }
 
 @media (min-width: 600px) {

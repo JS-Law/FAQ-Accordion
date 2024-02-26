@@ -120,7 +120,10 @@ button.btn, img.btn {
         transition: max-height 0.1s ease-in-out; 
     }
 }
-
+.attribution{
+    font-family: $default-font;
+    margin-bottom: 10px;
+}
 @media (min-width: 600px) {
     .content{
         width: 600px !important;
