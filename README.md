@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/JS-Law/FAQ-Accordion)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://js-law.github.io/FAQ-Accordion/)
 
 ## My process
 
